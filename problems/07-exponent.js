@@ -38,8 +38,9 @@ function exponent(num, power) {
 
     if(power < 0)
     {
-        power = power * -1
-        return (1/num) * exponent((1/num), power-1)
+        // power = power * -1
+        // return (1/num) * exponent((1/num), power-1)
+            return 1/ exponent(num, -power)
     }
 }
 
