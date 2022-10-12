@@ -33,7 +33,7 @@ function exponent(num, power) {
     if(power > 0)
     {
 
-        return num * exponent(num, power-1)
+        return num * exponent(num, power-1) 
     }
 
     if(power < 0)
@@ -42,6 +42,7 @@ function exponent(num, power) {
         // return (1/num) * exponent((1/num), power-1)
             return 1/ exponent(num, -power)
     }
+
 }
 
 console.log(exponent(3, 2)); // 9
